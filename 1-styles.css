@@ -345,4 +345,9 @@ header {
     .main-description--text {
         padding: 1em 24em;
     }
+
+    /* Section 1 styles */
+    .feature {
+        flex-basis: 25%;
+    }
 }
