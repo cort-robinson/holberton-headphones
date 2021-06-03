@@ -27,9 +27,19 @@ body {
     text-transform: uppercase;
 }
 
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
 .btn--primary {
     background-color: var(--clr-primary);
     color: var(--clr-light);
+}
+
+.link:hover,
+.link:active {
+    color: #FF6565;
 }
 
 h1 {
@@ -115,6 +125,14 @@ header {
     padding: 1.25em;
 }
 
+/* Larger than most mobiles */
+@media screen and (min-width: 500px) {
+    .bg-wrapper {
+        height: 100vh;
+        background-position: left -20em center;
+    }
+}
+
 /* Tablets */
 @media only screen and (min-width: 768px) {
     .toggle-label {
@@ -159,9 +177,11 @@ header {
     }
 }
 
+/* Desktop */
 @media only screen and (min-width: 1400px) {
     .bg-wrapper {
       background-position: initial;
+      height: 100vh;
     }
 
     .main-description--text {
